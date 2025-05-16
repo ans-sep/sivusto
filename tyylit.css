@@ -25,10 +25,9 @@ header {
 /* Navigation links styling */
 .nav-links {
     display: flex;
-    gap: 50px; /* Increase the gap between the links */
-    position: absolute; /* Absolute positioning for centering */
-    left: 50%;
-    transform: translateX(-50%); /* Move the container back to the center */
+    gap: 60px; /* Increase the gap between the links */
+    justify-content:center;
+    flex-grow: 1;
 }
 
 .nav-links a {
@@ -62,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 200px;
     gap: 30px
 }
 
@@ -79,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .kuva {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -212,6 +211,7 @@ table tbody tr:nth-child(even) {
     header {
         flex-direction: column;
         padding: 10px;
+        height: auto;
     }
     .nav-links {
         flex-direction: columm;   
