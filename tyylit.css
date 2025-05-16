@@ -14,6 +14,7 @@ header {
 
 .logo-container .logo {
     height: 120px; /* Adjust logo size for a taller header */
+    margin-left: 40px;
 }
 
 .logo {
@@ -25,7 +26,7 @@ header {
 /* Navigation links styling */
 .nav-links {
     display: flex;
-    gap: 60px; /* Increase the gap between the links */
+    gap: 150px; /* Increase the gap between the links */
     justify-content:center;
     flex-grow: 1;
 }
@@ -72,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .kuva-container {
     flex: 1;
-    max-width: 50%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -80,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    max-width: none;
 }
 
 /* täyttää koko sivun */
@@ -110,8 +112,8 @@ footer p {
     margin: 0; /* Remove default margin */
 }
 
-              /* /*Palvelumme-sivu */
 
+/* /*Palvelumme-sivu määrityksiä */
 
 .services-content {
     text-align: center;
@@ -197,6 +199,7 @@ table tbody tr:nth-child(even) {
     .paasisalto {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
     }
 
     .teksti, .kuva-container {
@@ -212,14 +215,23 @@ table tbody tr:nth-child(even) {
         flex-direction: column;
         padding: 10px;
         height: auto;
+        padding: 50px 15px; /* Slightly reduce padding for smaller screens */
     }
     .nav-links {
         flex-direction: columm;   
         gap: 10 px; 
-        margin-top: 130px;
+        margin-top: 50px;
     }
     .contact-content .image-container {
         display:none;
     }
+    /* TESTI NÄKYYKÖ OIKEIN MOBIILISSA - POISTA JOS EI */ 
+    .services-content .table-container {
+    margin: 0 auto; /* Center the table */
+    width: 100%; /* Ensure the container takes full width */
+    padding: 10px; /* Optional padding for spacing */
+    }
+    
+    
 
 }
