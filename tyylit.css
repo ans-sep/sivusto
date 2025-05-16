@@ -1,0 +1,225 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Keeps logo on the left */
+    align-items: center;
+    background-color: #45523e; /* Header background color */
+    padding: 30px 20px; /* Increase padding to make the header taller */
+    color: white;
+    height: 150px; /* Optional, set a fixed height if desired */
+}
+
+.logo-container {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.logo-container .logo {
+    height: 120px; /* Adjust logo size for a taller header */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 50px; /* Increase the gap between the links */
+    position: absolute; /* Absolute positioning for centering */
+    left: 50%;
+    transform: translateX(-50%); /* Move the container back to the center */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #f1f1f1;
+}
+
+
+
+body {
+    background-color: #F0F0F0;
+    color: #333333;
+    font-family: Calibri, sans-serif;
+    margin:40px 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+}
+
+
+
+.paasisalto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 30px
+}
+
+.teksti {
+    flex: 1;
+    max-width: 50%
+}
+
+.kuva-container {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.kuva {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* täyttää koko sivun */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #45523e; /* Same color as the header background */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    height: 20px; /* Set a fixed height for the footer */
+    padding: 30px; /* Optional padding for spacing */
+    font-size: 16px; /* Set font size */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+              /* /*Palvelumme-sivu */
+
+
+.services-content {
+    text-align: center;
+    padding: 20 px;
+    flex: 1;
+}
+.services-headline {
+    font-size: 2rem;
+    margin-bottom:20px
+}
+
+.services-content .table-container {
+    margin: 0 auto; 
+    width: 60%; 
+}
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #8f7777;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Yhteystiedot-sivu */
+
+.contact-content {
+    display: flex; 
+    justify-content: space-between; /* Space between image and text */
+    align-items: center; /* Align the items vertically */
+    padding: 50px;
+}
+
+/* Image styling (left side) */
+.contact-content .image-container {
+    flex: 1; /* Image takes 50% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Text styling (right side) */
+.contact-content .text-container {
+    flex: 1; /* Text takes 50% of the width */
+    padding-left: 20px; /* Space between the image and the text */
+    text-align: left; /* Align text to the left */
+}
+
+/* Headline and text styles */
+.contact-content .text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-content .text-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+/*responsiivisuusmäärittelyjä*/
+
+@media screen and (max-width: 768px) {
+    .paasisalto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teksti, .kuva-container {
+        max-width: 100%;
+    }
+    .kuva-container figcaption {
+        display:none;
+    }
+    .kuva {
+        display:none;
+    }
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: columm;   
+        gap: 10 px; 
+        margin-top: 130px;
+    }
+    .contact-content .image-container {
+        display:none;
+    }
+
+}
