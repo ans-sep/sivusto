@@ -1,0 +1,218 @@
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #45523e; 
+    padding: 30px 20px; 
+    color: white;
+    height: 150px; 
+}
+
+.logo-loota {
+    flex-shrink: 0; 
+}
+
+.logo-loota .logo {
+    height: 120px; 
+    margin-left: 40px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.valikko {
+    display: flex;
+    gap: 150px; 
+    justify-content:center;
+    flex-grow: 1;
+}
+
+.valikko a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.valikko a:hover {
+    color: #f1f1f1;
+}
+
+body {
+    background-color: #F0F0F0;
+    color: #333333;
+    font-family: Calibri, sans-serif;
+    margin:40px 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+}
+
+.paasisalto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+    gap: 30px
+}
+
+.teksti {
+    flex: 1;
+    max-width: 50%
+}
+
+.kuva-loota {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.kuva {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    max-width: none;
+}
+
+/* jotta footer menee alas asti */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #45523e; 
+    color: white; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 20px; 
+    padding: 30px; 
+    font-size: 16px; 
+}
+
+footer p {
+    margin: 0;
+}
+
+/* /*Palvelumme-sivu määrityksiä */
+
+.palvelut-loota {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+.services-headline {
+    font-size: 2rem;
+    margin-bottom:20px
+}
+
+.palvelut-loota .taulukko {
+    margin: 0 auto; 
+    width: 60%; 
+}
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #8f7777;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Yhteystiedot-sivun määrityksiä */
+
+.yhteystiedot-loota {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px;
+}
+
+.yhteystiedot-loota .jaska-loota  {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yhteystiedot-loota .jaska-loota img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.yhteystiedot-loota .yhteystietoteksti {
+    flex: 1; 
+    padding-left: 20px; 
+    text-align: left; 
+}
+
+.yhteystiedot-loota .yhteystietoteksti h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.yhteystiedot-loota .yhteystietoteksti p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/*responsiivisuusmäärittelyjä*/
+
+@media screen and (max-width: 768px) {
+    .paasisalto {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .teksti, .kuva-loota {
+        max-width: 100%;
+    }
+    .kuva-loota figcaption {
+        display:none;
+    }
+    .kuva {
+        display:none;
+    }
+    header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        padding: 50px 15px; 
+    }
+    .valikko {
+        flex-direction: column;   
+        gap: 10 px; 
+        margin-top: 50px;
+    }
+    .yhteystiedot-loota .kuvajaska {
+        display:none;
+    }
+
+}
